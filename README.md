@@ -2,13 +2,13 @@
 
 This is a tool for screening exome NGS data for the RFC1/CANVAS repeat.  
 Because the repeat lies in an intron, it is typically not targeted by exome kits.  
-However, we found that the locus is sill covered by a few reads, at least for some enrichment kits e.g. SureSelect Human All Exon V6/7.
+However, we found that the locus is still covered by a few reads, at least for some enrichment kits e.g. SureSelect Human All Exon V6/7.
 
-For genome data or exome kits that target the repeat locus, more sophisticated methods like [ExpansionHunter](https://github.com/Illumina/ExpansionHunter) should be used.
+For WGS data or exome kits that target the repeat locus, more sophisticated methods like [ExpansionHunter](https://github.com/Illumina/ExpansionHunter) should be used.
 
 ## Installation
 
-The following dependencies needs to be installed:
+The following dependencies need to be installed:
 
 - php (for command line)
 - tabix
@@ -29,7 +29,7 @@ After the installation you can call the tool like this:
 
 ### Input
 
-The tool needs the following input files:
+The tool needs the following input:
 
 - *vcf_list:* A file containing the single-sample VCF.GZ files of the samples to screen (one per line).  
   Note: The VCF.GZ files have to contain the genotype *GT* as first entry of the *FORMAT* column!  
@@ -57,7 +57,7 @@ It has the following columns:
 
 ## Filtering the output
 
-A simpl filtering strategy to select candidate samples for homozygous AAGGG repeat expansion would be: 
+A simple filtering strategy to select candidate samples for homozygous AAGGG repeat expansion would be: 
 
 - variants >=1	
 - variants_hom_perc >= 80	
