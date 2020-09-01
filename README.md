@@ -33,11 +33,11 @@ The tool needs the following input:
 
 - *vcf_list:* A file containing the single-sample VCF.GZ files of the samples to screen (one per line).  
   Note: The VCF.GZ files have to contain the genotype *GT* as first entry of the *FORMAT* column!  
-  Note: The VCF.GZ files have to be index!  
+  Note: The VCF.GZ files have to be indexed!  
 - *gene_locus:* The genomic coordinates of the RFC1 gene locus, i.e. `chr4:39287069-39370001` for GRCh37 and `chr4:39285449-39368381` for GRCH38.  
   Note: Remove the prefix *chr* if it is not contained in your reference genome. 
 - *bam_list:* A file containing the BAM files of the samples to screen (one per line).  
-  Note: The BAM files have to be index!  
+  Note: The BAM files have to be indexed!  
   Note: The order of the VCF and BAM files has to be in sync, i.e. the first VCF file has to be from the same sample as the first BAM file, and so on.
 - *repeat_locus:* The genomic coordinates of the RFC1 repeat locus, i.e. `chr4:39350034-39350137` for GRCh37 and `chr4:39348414-39348517` for GRCH38.  
   Note: Remove the prefix *chr* if it is not contained in your reference genome. 
